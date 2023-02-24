@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class imcScanner {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		double peso = Double.parseDouble(teclado.nextLine());
+		double altura = Double.parseDouble(teclado.nextLine());
+		double imc = peso / Math.pow(altura, 2);
+		
+
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Corretor {
+
+	public static void main(String[] args) {
+		
+		String gabarito = "aaeecbdbcd";
+		String [] gabaritoComparar = gabarito.split("");
+		System.out.println("Gabarito: " + gabarito);
+		System.out.println("Gabarito: " + gabaritoComparar);
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite as respostas: ");
+		String respostas = teclado.nextLine();
+		
+		String [] respostasComparar = respostas.split("");
+		
+		int acertos = 0;
+		for(int i = 0; i <= gabarito.length()-1; i++) {
+			
+			if (gabaritoComparar[i].equals(respostasComparar[i])){
+				acertos++;
+			}
+		}
+		System.out.println("Número de acertos: " + acertos);
+		teclado.close(); }
+}

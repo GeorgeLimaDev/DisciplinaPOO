@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class amigos {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Qual é o seu nome?");
+		String nome1 = teclado.nextLine();
+		System.out.println(nome1 + "De quem você é amigo?");
+
+	}
+
+}
